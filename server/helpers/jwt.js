@@ -6,7 +6,6 @@ const generateToken = (data) => {
         email : data.email,
         id : data.id
     }, secret);
-
     return access_token
 }
 

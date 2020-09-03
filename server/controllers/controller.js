@@ -33,7 +33,8 @@ class Controller {
             if (!data) {
                 return res.status (400).json ({message : "Bad Request"})
             } else {
-                return res.status (200).json ({message : "Successfully editing review"})
+                // return res.status (200).json ({message : "Successfully editing review"})
+                return res.status (200).json (data)
             }
         })
         .catch(err => res.status(400).json(err))
