@@ -25,7 +25,6 @@ class UserController {
 
             } else {
                 return res.status (400).json ({message : "Email or Password is Invalid"})
-
             }
         })
         .catch (err => {
@@ -44,6 +43,7 @@ class UserController {
             return res.status (201).json (data)
         })
         .catch (err => {
+            console.log(err)
             return res.status (500).json ({message : "Internal Server Error"})
         })
     }

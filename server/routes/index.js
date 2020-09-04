@@ -9,6 +9,8 @@ route.post('/register', UserController.register)
 
 route.get('/reviews', authentication, Controller.getReviews)
 route.post('/reviews', authentication, authorization, Controller.addReview)
+
+route.get('/reviews/:id', authentication, Controller.getById)
 route.put('/reviews/:id', authentication, authorization, Controller.editReview)
 route.delete('/reviews/:id', authentication, authorization, Controller.deleteReview)
 
