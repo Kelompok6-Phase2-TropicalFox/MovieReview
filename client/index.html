@@ -19,7 +19,7 @@
             </div>
             <div class="login-form"  >
                 <h2>Sign In</h2>
-                <form>
+                <form class="login-FORM">
                     <div class="input-container">
                         <input type="text" name="email" class="input" id='emailLogin' placeholder="email">
                     </div>
@@ -42,7 +42,7 @@
         <div class="register-form-wrapper">
             <div class="register-form" >
                 <h2>Register</h2>
-                <form>
+                <form class="register-FORM">
                     <div class="input-container">
                         <input type="text" name="email" class="input" id="emailRegister" placeholder="email">
                     </div>
@@ -90,19 +90,19 @@
                         </div>
                         <div class="profile-logout-container">
                             <form action="#">
-                                <a href="#" onclick="signOut();">Sign out</a>
-                                <!-- <button class="btn profile-logout">Logout</button> -->
+                                <!-- <a href="#" onclick="signOut();">Sign out</a> -->
+                                <button class="btn profile-logout">Logout</button>
                             </form>
                         </div>
                     </div>
 
                     <!-- Add Review -->
                     <div class="add-review-container">
-                        <form action="">
-                            <input type="text" name="link" placeholder="link" class="add-review-input"><br>
-                            <input type="text" name="title" placeholder="title" class="add-review-input"><br>
-                            <textarea type="text" name="review" placeholder="review" class="add-review-textarea"></textarea><br>
-                            <button class="btn">Add Review</button>
+                        <form class="add-reviews " id="form-untuk-review">
+                            <input type="text" name="link" placeholder="link" class="add-review-input" id="add-link"><br>
+                            <input type="text" name="title" placeholder="title" class="add-review-input" id="add-title"><br>
+                            <textarea type="text" name="review" placeholder="review" class="add-review-textarea" id="add-review"></textarea><br>
+                            <button class="btn" id="add-review">Add Review</button>
                         </form>
                     </div>
 
@@ -136,13 +136,13 @@
                                 <td class="td-head"><b>Action</b></td>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody id="tablebody">
+                            <!-- <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -150,7 +150,79 @@
 
             <!-- Right Content -->
             <div class="right-content">
-                <p>ini api</p>
+                <div class="movies-card">
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="movies-card">
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="movies-card">
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/todo1.png" alt="Avatar" style="width:200px">
+                        <div class="container">
+                          <h4><b>John Doe</b></h4>
+                          <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
