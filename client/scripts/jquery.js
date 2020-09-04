@@ -44,23 +44,23 @@ $(document).ready(function(){
 })
 
 
-// $(document).ready(function(){
-//     initContent()
-//     if(localStorage.getItem('acces_token')){
-//         afterLogin()
-//         menuHome()
-//     }else{
-//         beforeLogin()
-//         menuLogin()
-//     }
+$(document).ready(function(){
+    initContent()
+    if(localStorage.getItem('acces_token')){
+        afterLogin()
+        menuHome()
+    }else{
+        beforeLogin()
+        menuLogin()
+    }
 
-//     $('#nav-login').click(menuLogin)
-//     $('#nav-register').click(menuRegister)
-//     $('#logout').click(menuLogout)
-//     $('#edit-todo').click(menuEdit)
-//     $('#add-todo').click(menuAdd)
+    $('#nav-login').click(menuLogin)
+    $('#nav-register').click(menuRegister)
+    $('#logout').click(menuLogout)
+    $('#edit-todo').click(menuEdit)
+    $('#add-todo').click(menuAdd)
     
-//     // login 
-//     $('#formLogin').submit(loginForm)
+    // login 
+    $('#formLogin').submit(loginForm)
 
-// })
+})
